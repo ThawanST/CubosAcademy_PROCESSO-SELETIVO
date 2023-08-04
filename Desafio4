@@ -1,0 +1,34 @@
+function solucao(peso1, peso2) {
+    let classific1 = " ";
+    let classific2 = " ";
+
+    if(peso1>=85){
+        classific1 = "Peso pesado";
+    }else if(peso1>=75){
+        classific1 = "Peso meio pesado";
+    }else if(peso1>=65){
+        classific1 = "Peso médio";
+    }else if(peso1>=55){
+        classific1 = "Peso meio médio";
+    }else{
+        classific1 = "Peso pena";
+    }
+
+   if(peso2>=85){
+        classific2 = "Peso pesado";
+    }else if(peso2>=75){
+        classific2 = "Peso meio pesado";
+    }else if(peso2>=65){
+        classific2 = "Peso médio";
+    }else if(peso2>=55){
+        classific2 = "Peso meio médio";
+    }else{
+        classific2 = "Peso pena";
+    }
+
+    if(classific1 === classific2){
+        return("PODEM LUTAR");
+    }else{
+        return("NAO PODEM LUTAR");
+    }
+}
