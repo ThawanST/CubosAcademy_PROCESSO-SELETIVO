@@ -1,0 +1,20 @@
+function solucao(itensColetados, itemNecessario1, itemNecessario2, itemNecessario3) {
+    let itens = 0;
+    for(let i = 0; i = itensColetados.length;i++){
+        if (itensColetados[i]===itemNecessario1){
+            itens+=1;
+        }else{
+            if(itensColetados[i]===itemNecessario2){
+               itens+=1;
+            }else if(itensColetados[i]===itemNecessario3){
+            itens+=1;
+            }    
+        }    
+    }
+
+    if(itens === 3){
+        return("PODE ENFRENTAR")
+    }else{
+        return("NAO PODE ENFRENTAR")
+    }
+}
