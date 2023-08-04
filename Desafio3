@@ -1,0 +1,16 @@
+function solucao(pesos) {
+   let peso1 = pesos[0];
+   let peso2 = pesos[1];
+   let d = peso1-peso2;
+
+   while(d < 0){
+    d = d * (-1);
+   }
+
+   if(d<=5){
+     return("PODEM LUTAR");
+   }else{
+     return("NAO PODEM LUTAR");
+   }
+
+}  
