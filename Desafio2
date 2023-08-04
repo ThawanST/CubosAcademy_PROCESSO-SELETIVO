@@ -1,0 +1,20 @@
+function solucao(altitude) {
+    if(altitude<=900 && altitude>450){
+        return("EXOSFERA");
+    }else{
+        if(altitude<=450 && altitude>80){
+            return("TERMOSFERA");
+        }else{
+            if(altitude<=80 && altitude>50){
+                return("MESOSFERA");
+            }else{
+                if(altitude<=50 && altitude>20){
+                    return("ESTRATOSFERA");
+                }else{
+                    return("TROPOSFERA");
+                }
+            }
+        }
+    }
+
+}
